@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="search">Search</string>
+    <string name="error">Error</string>
+    <string name="noItems">لا يوجد نتائج مطابقة</string>
+    <string name="hello_word">hello_word</string>
+</resources>
