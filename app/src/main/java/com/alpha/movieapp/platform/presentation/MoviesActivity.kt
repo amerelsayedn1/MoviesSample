@@ -33,6 +33,8 @@ class MoviesActivity : AppCompatActivity(R.layout.activity_main) {
 
         initAdapter()
 
+        viewModel.getPopularMovies()
+
         btnSearch.setOnClickListener {
             movieList.clear()
             viewModel.getMovies(etSearch.text.toString())

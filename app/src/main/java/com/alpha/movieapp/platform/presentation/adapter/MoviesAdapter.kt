@@ -30,7 +30,7 @@ class MoviesAdapter(private val data: ArrayList<Movie>) : BaseAdapter<Movie>(dat
 
         override fun bind(data: Movie) {
             data.apply {
-                ivMovieImg.load("http://image.tmdb.org/t/p/w780$posterPath")
+                ivMovieImg.load("https://image.tmdb.org/t/p/w500$posterPath")
                 tvMovieTitle.text = title
                 tvMovieReleaseDate.text = releaseDate
                 tvMovieDescription.text = overview

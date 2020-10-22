@@ -22,5 +22,14 @@ class MoviesViewModel(private val movieRepo: MoviesRepo) : ViewModel() {
         }
     }
 
+    fun getPopularMovies(page: Int = 1) = viewModelScope.launch {
+        val response = movieRepo.getPopularMovies(page)
+        if (response.isRequestSuccess) {
+            movieSuccessResponse.value = response.responseBody
+        } else {
+            movieErrorResponse.value = response.errorResponse
+        }
+    }
+
 
 }
